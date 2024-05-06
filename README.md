@@ -23,3 +23,4 @@ Alpha knows your name, system, date and time. When integrated with my [Dotfiles]
 - [ ] Document integration
 - [ ] YouTube summarization
 - [ ] MemGPT
+- [ ] Code interpreter
