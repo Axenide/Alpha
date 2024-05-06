@@ -1,10 +1,12 @@
-<h1 align="center">Alpha 🔥</h1>
+<h1 align="center">🔥 Alpha</h1>
 
 ![Alpha](assets/screenshot.png)
 
 <p align="center">
 <sup>
+<i>
 Alpha is a fun, friendly, fast and powerful AI assistant with a lot of personality.
+<i>
 </sup>
 </p>
 Powered by Groq and Streamlit. Ollama support is coming soon.
