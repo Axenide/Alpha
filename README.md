@@ -6,7 +6,7 @@
 <sup>
 <i>
 Alpha is a fun, friendly, fast and powerful AI assistant with a lot of personality.
-<i>
+</i>
 </sup>
 </p>
 Powered by Groq and Streamlit. Ollama support is coming soon.
