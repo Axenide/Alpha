@@ -9,7 +9,7 @@ if [ "$1" = "start" ]; then
   source venv/bin/activate
   streamlit run alpha.py --server.port 3141 > /dev/null &
   clear
-  echo -e "\e[1m\e[31m🔥 Alpha\e[0m\e[93m started! Now you can access it at \e[1m\e[31mhttp://localhost:3141/Alpha\e[0m\e[93m"
+  echo -e "\e[1m\e[31m🔥 Alpha\e[0m\e[93m started! Now you can access it at \e[1m\e[31mhttp://localhost:3141/\e[0m\e[93m"
   echo ""
 elif [ "$1" = "kill" ]; then
   killall streamlit
