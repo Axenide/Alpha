@@ -7,7 +7,7 @@
 if [ "$1" = "start" ]; then
   cd $(dirname $(realpath $0))
   source venv/bin/activate
-  streamlit run alpha.py --server.port 3141 --server.baseUrlPath /Alpha > /dev/null &
+  streamlit run alpha.py --server.port 3141 > /dev/null &
   clear
   echo -e "\e[1m\e[31m🔥 Alpha\e[0m\e[93m started! Now you can access it at \e[1m\e[31mhttp://localhost:3141/Alpha\e[0m\e[93m"
   echo ""
