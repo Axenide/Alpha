@@ -116,7 +116,7 @@ st.write(
     2px 4px 0px #000,
     2px 5px 0px #000;
     '>
-    <span style='color: #db4740; font-style: italic;'>Ax</span><span style='color: #47423e;'>-</span>Alpha</span>
+    <span style='color: #B86467; font-style: italic;'>Ax</span><span style='color: #181818;'>-</span>Alpha</span>
     </p>
     """,
     unsafe_allow_html=True)
