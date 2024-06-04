@@ -1,4 +1,4 @@
-<h1 align="center">🔥 Alpha</h1>
+<h1 align="center">🍣 Alpha</h1>
 
 ![Alpha](assets/screenshot.png)
 
