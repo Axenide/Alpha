@@ -75,11 +75,11 @@ else:
     Current date and time: {datetime_obj}.
     """
 
-st.set_page_config(page_icon="🔥",
+st.set_page_config(page_icon="🍣",
                    layout="wide",
                    page_title="Ax-Alpha")
 
-st.write("<h1 style='text-align: center;'><span style='font-size: 72pt; opacity: 0.5;'>🔥</span></h1>", unsafe_allow_html=True)
+st.write("<h1 style='text-align: center;'><span style='font-size: 72pt; opacity: 0.3;'>🍣</span></h1>", unsafe_allow_html=True)
 
 st.write(
     """
@@ -89,7 +89,7 @@ st.write(
     font-size: 48pt;
     font-weight: 600;
     position: relative;
-    bottom: 110px;
+    bottom: 120px;
     text-shadow:
     0px -2px 0px #000,
     0px -1px 0px #000,
@@ -261,14 +261,14 @@ st.markdown("""
 	}
 
     [data-testid="stAppViewContainer"] {
-        border: 1px solid #1b1d1d;
+        border: 2px solid #111111;
         border-radius: 8px;
     }
 
     [data-testid="stHeader"] {
-        border-top: 1px solid #1b1d1d;
-        border-left: 1px solid #1b1d1d;
-        border-right: 1px solid #1b1d1d;
+        border-top: 2px solid #111111;
+        border-left: 2px solid #111111;
+        border-right: 2px solid #111111;
         border-radius: 8px 8px 0px 0px;
     }
 
