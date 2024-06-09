@@ -261,14 +261,14 @@ st.markdown("""
 
     [data-testid="stAppViewContainer"] {
         border: 2px solid #111111;
-        border-radius: 8px;
+        border-radius: 10px;
     }
 
     [data-testid="stHeader"] {
         border-top: 2px solid #111111;
         border-left: 2px solid #111111;
         border-right: 2px solid #111111;
-        border-radius: 8px 8px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
     }
 
     [data-testid="stDeployButton"] {
