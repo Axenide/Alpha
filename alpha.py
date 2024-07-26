@@ -135,10 +135,16 @@ if "selected_model" not in st.session_state:
 
 # Define model details
 models = {
-    "gemma-7b-it": {"name": "Gemma-7b-it", "tokens": 8192, "developer": "Google", "nickname": "Gemma-7b"},
-    "llama3-70b-8192": {"name": "LLaMA3-70b-8192", "tokens": 8192, "developer": "Meta", "nickname": "LLaMA3-70b"},
-    "llama3-8b-8192": {"name": "LLaMA3-8b-8192", "tokens": 8192, "developer": "Meta", "nickname": "LLaMA3-8b"},
-    "mixtral-8x7b-32768": {"name": "Mixtral-8x7b-Instruct-v0.1", "tokens": 32768, "developer": "Mistral", "nickname": "Mixtral-8x7b"},
+    "llama-3.1-70b-versatile": {"name": "LLaMA-3.1-70b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-70B"},
+    "llama-3.1-8b-instant": {"name": "LLaMA-3.1-8b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-8B"},
+    "llama-3.1-405b-reasoning": {"name": "LLaMA-3.1-405b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-405B"},
+    "llama3-groq-70b-8192-tool-use-preview": {"name": "LLaMA-3-Groq-70b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3-Groq-70B"},
+    "llama3-groq-8b-8192-tool-use-preview": {"name": "LLaMA-3-Groq-8b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3-Groq-8B"},
+    "llama3-70b-8192": {"name": "LLaMA3-70b-8192", "tokens": 8192, "developer": "Meta", "nickname": "LLaMA3-70B"},
+    "llama3-8b-8192": {"name": "LLaMA3-8b-8192", "tokens": 8192, "developer": "Meta", "nickname": "LLaMA3-8B"},
+    "mixtral-8x7b-32768": {"name": "Mixtral-8x7b-Instruct-v0.1", "tokens": 32768, "developer": "Mistral", "nickname": "Mixtral-8x7B"},
+    "gemma2-9b-it": {"name": "Gemma2-9b-it", "tokens": 8192, "developer": "Google", "nickname": "Gemma2-9B"},
+    "gemma-7b-it": {"name": "Gemma-7b-it", "tokens": 8192, "developer": "Google", "nickname": "Gemma-7B"},
 }
 
 # # For file in .streamlit/.chats/*.json add an option, and if selected, set st.session_state.messages to the chat_history
@@ -159,7 +165,7 @@ with st.sidebar:
         "Choose a model:",
         options=list(models.keys()),
         format_func=lambda x: models[x]["name"],
-        index=1  # Default to LLaMA3-70b-8192
+        index=0  # Default to the first model
     )
 
 # Detect model change and clear chat history if model has changed
@@ -176,7 +182,7 @@ with st.sidebar:
         min_value=512,  # Minimum value to allow some flexibility
         max_value=max_tokens_range,
         # Default value or max allowed if less
-        value=min(32768, max_tokens_range),
+        value=min(8000, max_tokens_range),
         step=512,
         help=f"Adjust the maximum number of tokens (words) for the model's response. Max for selected model: {max_tokens_range}"
     )
