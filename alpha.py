@@ -265,18 +265,6 @@ st.markdown("""
 		display: none;
 	}
 
-    [data-testid="stAppViewContainer"] {
-        border: 2px solid #111111;
-        border-radius: 10px;
-    }
-
-    [data-testid="stHeader"] {
-        border-top: 2px solid #111111;
-        border-left: 2px solid #111111;
-        border-right: 2px solid #111111;
-        border-radius: 10px 10px 0px 0px;
-    }
-
     [data-testid="stDeployButton"] {
         display: none;
     }
