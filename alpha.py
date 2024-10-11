@@ -135,6 +135,7 @@ if "selected_model" not in st.session_state:
 
 # Define model details
 models = {
+    "llama-3.2-90b-text-preview": {"name": "LLaMA-3.2-90b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.2-90B"},
     "llama-3.1-70b-versatile": {"name": "LLaMA-3.1-70b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-70B"},
     "llama-3.1-8b-instant": {"name": "LLaMA-3.1-8b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-8B"},
     "llama-3.1-405b-reasoning": {"name": "LLaMA-3.1-405b", "tokens": 131072, "developer": "Meta", "nickname": "LLaMA3.1-405B"},
